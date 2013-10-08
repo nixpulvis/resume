@@ -2,23 +2,23 @@
 \usepackage[letterpaper,margin=3em]{geometry}
 \usepackage{mdwlist}
 \usepackage{color}
+
+% Configuration.
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
 % indentsection style, used for sections that aren't already in lists
 % that need indentation to the level of all text in the document
-\newenvironment{indentsection}[1]%
-{\begin{list}{}%
-  {\setlength{\leftmargin}{#1}}%
-  \item[]%
+\newenvironment{indentsection}[1]
+{\begin{list}{}
+  {\setlength{\leftmargin}{#1}} \item[]
 }
 {\end{list}}
 
 % opposite of above; bump a section back toward the left margin
-\newenvironment{unindentsection}[1]%
-{\begin{list}{}%
-  {\setlength{\leftmargin}{-0.5#1}}%
-  \item[]%
+\newenvironment{unindentsection}[1]
+{\begin{list}{}
+  {\setlength{\leftmargin}{-0.5#1}} \item[]
 }
 {\end{list}}
 
@@ -29,48 +29,55 @@
   #2 \\
 \end{tabular*}}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here lies my resume in all it's glory. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 % Resume header.
 \begin{center}
-{\huge \textbf{Nathan Lilienthal}}\\\vspace{.2ex}
-{\large github.com/nixpulvis $\circ$ nathan@nixpulvis.com $\circ$ 202-701-4368
-$\circ$ Available January - June 2014}\vspace{-1ex}
+  \huge \textbf{Nathan Lilienthal} \\
+  \large
+  github.com/nixpulvis
+  $\circ$
+  nathan@nixpulvis.com
+  $\circ$
+  202-701-4368
+  $\circ$
+  Available January - June 2014
+  \vspace{-0.2em}
 \end{center}
 
 % Education section.
 \hrule
 \vspace{-0.4em}
 \subsection*{Education}
-
 \begin{itemize}
   \parskip=0.1em
 
-  \item 
+  \item
   \headerrow
     {\textbf{Northeastern University}}
     {\textbf{Boston, MA}}
-  \\
   \headerrow
     {\emph{College of Computer and Information Science}}
     {\emph{2011 -- Present}}
     {\emph{Bachelor of Science in Computer Science expected in 2016}}
   \begin{itemize*}
-  \item Relevant Courses: Systems and Networks, Artificial Intelligence, Theory of Computation, Object Oriented Design,
-  Computer Organization, Fundamentals of Computer Science 1 \& 2, Logic and Computation
-   \item GPA: 3.125/4.000
+    \item
+    Relevant Courses: Systems and Networks, Artificial Intelligence,
+    Theory of Computation, Object Oriented Design, Computer Organization,
+    Fundamentals of Computer Science 1 \& 2, Logic and Computation
+    \item
+    GPA: 3.125/4.000
   \end{itemize*}
-
 \end{itemize}
 
 
 % Misc section.
 \hrule
-%\vspace{-0.4em}
-
 \begin{indentsection}{\parindent}
-\hyphenpenalty=1000
 \begin{description*}
   \item[Languages:]
   C, Java, JavaScript, Ruby, Python, Shell, LUA, Arduino, Racket
@@ -86,7 +93,6 @@ $\circ$ Available January - June 2014}\vspace{-1ex}
 \hrule
 \vspace{-0.4em}
 \subsection*{Experience}
-
 \begin{itemize}
   \parskip=0.1em
 
@@ -94,55 +100,60 @@ $\circ$ Available January - June 2014}\vspace{-1ex}
   \headerrow
     {\textbf{Bluesocket - Adtran}}
     {\textbf{Burlington, MA}}
-  \\
   \headerrow
     {\emph{Software Developer}}
     {\emph{Jan 2013 -- Jun 2010}}
   \begin{itemize*}
-    \item Developed an automated build system to allow developers to see how their
+    \item
+    Developed an automated build system to allow developers to see how their
     changes would effect a real build of the system. Made turnaround time on
     changes faster, and allowed everyone to run a build.
-    \item Fixed user reported issues in Ruby/Rails and LUA. Including hardening
-    validations, and updating database migrations for old versions of the software.
-    \item Designed a class/model structure for users and accesspoints to allow
-    the backend to represent clients of individual accesspoints.
+    \item
+    Fixed user reported issues in Ruby/Rails and LUA. Including hardening
+    validations, and updating database migrations for old versions of the
+    software.
+    \item
+    Designed a class/model structure for users and accesspoints to allow the
+    back-end to represent clients of individual accesspoints.
   \end{itemize*}
 
   \item
   \headerrow
     {\textbf{Northeastern University CCIS}}
     {\textbf{Boston, MA}}
-  \\
   \headerrow
     {\emph{Tutor for Fundamentals of Computer Science 1}}
     {\emph{Fall 2012, Fall 2013}}
   \begin{itemize*}
-    \item Assist in labs for the class by monitoring the classes progress,
-    helping students with questions, and teaching concepts in new ways.
-    \item Teach students during office hours about concepts of the course. Provide a
+    \item
+    Assist in labs for the class by monitoring the classes progress, helping
+    students with questions, and teaching concepts in new ways.
+    \item
+    Teach students during office hours about concepts of the course. Provide a
     new outlook on problems and guide students to their own answers.
-    \item Grade homework, and provide feedback.
+    \item
+    Grade homework, and provide feedback.
   \end{itemize*}
 
   \item
   \headerrow
     {\textbf{Homer Energy}}
     {\textbf{Boulder, CO}}
-  \\
   \headerrow
     {\emph{Software Developer, Summer Intern}}
     {\emph{Summer 2013}}
   \begin{itemize*}
-    \item Debugged a flex/flash application, cleaning up the UI and fixing
-    issues.
-    \item Developed an internal tool to view the Google Protocol Buffer
-    used to pass values between all parts of the application. This allowed
-    developers to quickly see what the values of program inputs and outputs were.
-    \item Began a web based front-end for HOMER in Rails.
-    This was the starting point for the starter edition of HOMER, and provided
-    a proof of concept for how to integrate the HOMER API with a webserver.
+    \item
+    Debugged a flex/flash application, cleaning up the UI and fixing issues.
+    \item
+    Developed an internal tool to view the Google Protocol Buffer used to pass
+    values between all parts of the application. This allowed developers to
+    quickly see what the values of program inputs and outputs were.
+    \item
+    Began a web based front-end for HOMER in Rails. This was the starting point
+    for the starter edition of HOMER, and provided a proof of concept for how
+    to integrate the HOMER API with a webserver.
   \end{itemize*}
-
 \end{itemize}
 
 
@@ -150,53 +161,54 @@ $\circ$ Available January - June 2014}\vspace{-1ex}
 \hrule
 \vspace{-0.4em}
 \subsection*{Current Projects}
-
 \begin{itemize}
   \parskip=0.1em
 
-  \item 
+  \item
   \headerrow
     {\textbf{Quadcopter}}
     {\textbf{3 Involved People}}
-  \\
   \headerrow
     {\emph{Autonomus / Remote Controled Arial Drone}}
     {\emph{2013 -- Current}}
-
   \begin{itemize*}
-    \item RC electronics, including 3-phase brushless motors, electronic speed
+    \item
+    RC electronics, including 3-phase brushless motors, electronic speed
     controllers, and LiPo batteries.
-    \item Dug deeper into Arduino and microelectronics circuits, connecting the
-    motors to the self-made control board. The control board has a slew of sensors
-    on it including the all important IMU.
-    \item Learned a bit of 3D rotational math needed to understand and compute with
+    \item
+    Dug deeper into Arduino and microelectronics circuits, connecting the
+    motors to the self-made control board. The control board has a slew of
+    sensors on it including the all important IMU.
+    \item
+    Learned a bit of 3D rotational math needed to understand and compute with
     data from the accelerometer and gyroscope to stabilize the craft.
   \end{itemize*}
 
-\item 
+  \item
   \headerrow
     {\textbf{NUACM Website}}
     {\textbf{5+ Involved People}}
-  \\
   \headerrow
     {\emph{Marketing / Information Collection \& Display Website}}
     {\emph{2013 -- Current}}
-
   \begin{itemize*}
-    \item Solely wrote the full backend in Rails for the website, with models for members
-    of NUACM, payment dues, events held by the club, and more.
-    \item Contributed to a large degree on the frontend, to display and collect information from members,
-    and to promote the club.
-    \item It's all on Github, except the secret server configs. github.com/nuacm/website
+    \item
+    Solely wrote the full backend in Rails for the website, with models for
+    members of NUACM, payment dues, events held by the club, and more.
+    \item
+    Contributed to a large degree on the frontend, to display and collect
+    information from members, and to promote the club.
+    \item
+    It's all on Github, except the secret server configs.
+    github.com/nuacm/website
   \end{itemize*}
-
 \end{itemize}
 
 
 % Metalink
 \begin{center}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
-\textcolor{gray}{\textit{Code for this resume is available on GitHub. github.com/nixpulvis/resume}}
+\textcolor{gray}{\footnotesize source code @ github.com/nixpulvis/resume}
 \end{center}
 
 \end{document}
