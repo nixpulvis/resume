@@ -2,6 +2,7 @@
 \usepackage[letterpaper,margin=3em]{geometry}
 \usepackage{mdwlist}
 \usepackage{color}
+\usepackage{hyperref}
 
 % Configuration.
 \pagestyle{empty}
@@ -167,10 +168,11 @@
   \begin{itemize*}
     \item
     Pushed code to the front-end and back-end for all four of Americas Test
-    Kitchen's websites including bug fixes and technical infrastructure upgrades.
+    Kitchen's websites including bug fixes and technical infrastructure
+    upgrades.
     \item
-    Built modularized components to abstract functionality found common throughout
-    the companies codebase.
+    Built modularized components to abstract functionality found common
+    throughout the companies codebase.
   \end{itemize*}
 
   \item
@@ -182,9 +184,9 @@
     {\emph{Jan. 2013 -- June 2013}}
   \begin{itemize*}
     \item
-    Developed an automated build system which allowed developers to see how their
-    changes would affect a real build of the system. Reduced turnaround time,
-    allowing anyone to easily run a build.
+    Developed an automated build system which allowed developers to see how
+    their changes would affect a real build of the system. Reduced turnaround
+    time, allowing anyone to easily run a build.
     \item
     Addressed user reported issues in Ruby/Rails and LUA, including hardening
     validations, and updating database migrations for old versions of the
@@ -196,19 +198,23 @@
 
 \end{itemize}
 
+
+\vspace*{\fill}
+
+
 % Interests section.
 \hrule
 \begin{indentsection}{\parindent}
 \begin{description*}
-\item[Interests:]
-  Microelectronics, Computer Architecture, Teaching, Skiing, Woodworking
-  (aspiring), Music.
+\item[Some Interests:]
+  Teaching, Microelectronics, Woodworking, Music, Gaming, Skiing, Cats.
 \end{description*}
 \end{indentsection}
 
 
 % I guess this is two pages now.
 \clearpage
+
 
 % Education section.
 \hrule
@@ -226,27 +232,41 @@
     {\emph{2011 -- 2016}}
     {\emph{Bachelor of Science in Computer Science}}
   \begin{itemize*}
-    \item
-    Relevant Courses Taken: Programming Languages, Systems and Networks,
-    Artificial Intelligence, Theory of Computation, Object Oriented Design,
-    Computer Organization, Fundamentals of Computer Science 1 \& 2, Logic and
-    Computation, Algorithms and Data Structures, Special Topics in Programming
-    Languages, Software Development (aka HELL), Compilers, Combinatorics.
-    \item
-    Courses TA'd: Fundamentals of Computer Science 1 (4 years).
+    \item Relevant Courses Taken:
+    \begin{itemize*}
+      \item Programming Languages
+      \item Special Topics in Programming Languages
+      \item Compilers
+      \item Systems and Networks,
+      \item Computer Organization
+      \item Software Development (aka HELL),
+      \item Theory of Computation
+      \item Algorithms and Data Structures
+      \item Fundamentals of Computer Science 1 \& 2,
+      \item Object Oriented Design,
+      \item Artificial Intelligence
+      \item Logic and Computation,
+      \item Combinatorics
+    \end{itemize*}
+    \item Clubs \& Extracurriculars:
+    \begin{itemize*}
+      \item NU Hacks
+      \item Hack Beanpot
+      \item ACM
+    \end{itemize*}
   \end{itemize*}
 \end{itemize}
 
 
-% XXX: I don't know how to make proper footers in LaTeX.
-\hfill \break
-\hfill \break
-\hfill \break
+\vspace*{\fill}
+
 
 % Metalink
 \begin{center}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
-\footnotesize source code @ github.com/nixpulvis/resume
+\footnotesize \LaTeX \ source available at
+\url{https://github.com/nixpulvis/resume}
 \end{center}
+
 
 \end{document}
