@@ -1,0 +1,33 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=3em]{geometry}
+\usepackage{mdwlist}
+\usepackage{color}
+\usepackage{varwidth}
+\usepackage[hidelinks]{hyperref}
+
+\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}
+
+% Configuration.
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]
+{\begin{list}{}
+  {\setlength{\leftmargin}{#1}} \item[]
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]
+{\begin{list}{}
+  {\setlength{\leftmargin}{-0.5#1}} \item[]
+}
+{\end{list}}
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+  #1 &
+  #2 \\
+\end{tabular*}}

@@ -1,0 +1,134 @@
+\input{./head/preamble.tex}
+
+\begin{document}
+
+\input{./head/header.tex}
+
+
+\hrule
+\begin{indentsection}{\parindent}
+\begin{description*}
+  \input{./skills/languages.tex}
+  \input{./skills/systems.tex}
+\end{description*}
+\end{indentsection}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Professional Experience}
+\begin{itemize}
+  \parskip=0.1em
+
+  \input{./experience/hector.tex}
+  \input{./experience/forward_financing.tex}
+  \input{./experience/homer_energy.tex}
+  \input{./experience/apple.tex}
+  \input{./experience/atk.tex}
+  \input{./experience/bluesocket.tex}
+\end{itemize}
+
+
+\vspace*{\fill}
+
+
+\hrule
+\begin{indentsection}{\parindent}
+\begin{description*}
+  \input{./skills/others.tex}
+\end{description*}
+\end{indentsection}
+
+
+% I guess this is two pages now.
+\clearpage
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education \& Projects}
+\begin{itemize}
+  \parskip=0.1em
+
+  \input{./education/university.tex}
+  \input{./education/ta.tex}
+  \input{./education/projects.tex}
+\end{itemize}
+\hrule
+
+
+\vspace*{\fill}
+
+
+\begin{figure}[h]
+\centering
+\tiny
+\begin{varwidth}{\linewidth}
+\begin{verbatim}
+           (λ(f)(λ
+           (x)(((x(λ(
+           x)(λ(x y)y)
+           )(λ(x y)x))(
+           x(λ(x)(λ(x y)
+               y))(λ(x y
+                 )x))(((
+                  x(λ(p)(
+                   λ(s)(s
+                   (p (λ(
+                   x y)y))
+                    (λ(f x
+                    )(f((p(
+                     λ(x y)
+                     y))f x
+                     ))))))(
+                     λ(s)(s(
+                    λ(f x)x)
+                    (λ(f x)x)
+                   )))(λ(x y)
+                   x))(λ(x)(λ(
+                   x y)y)) (λ(
+                  x y) x)))(λ(
+                  f x)(f x))((f
+                 ((x(λ(p )(λ (s
+                 )(s(p(  λ(x y)
+                y))(λ (  f x)(f(
+                (p (λ(    x y)y)
+               )f x)))    )))(λ(
+               y s)(s      (λ(f x
+               )x)(λ(      f x)x)
+              )))(λ(       x y)x))
+              )(λ(n)        (λ (f
+             x)(f (n        f x)))
+             )(f(((         (x(λ(p)
+            (λ(s)(s         (p( λ(
+            x y )y           ))(λ(f
+           x) (f((           p(λ(x y
+           )y)) f              x)))))
+          )(λ(s)(             s(λ(f x
+          )x)(λ(               f x)x)
+          ))) (λ               (x y)x
+         ))(λ(p                )(λ(s)(
+         s(p(λ(                 x y)y)
+        )(λ (f                  x)(f((
+        p(λ (x                  y)y)) f
+       x))))))                   (λ(s)(
+       s(λ (f                    x)x)(λ
+      (f x)x)                     )))(λ(
+      x y)x)                      ))))))
+\end{verbatim}
+\end{varwidth}
+\end{figure}
+
+
+\vspace*{\fill}
+
+
+% Metalink
+\begin{center}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\footnotesize \LaTeX \ source available at
+\url{https://github.com/nixpulvis/resume}
+\end{center}
+
+
+\end{document}
